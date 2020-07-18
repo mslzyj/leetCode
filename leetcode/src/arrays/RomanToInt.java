@@ -8,7 +8,7 @@ import java.util.Map;
  */
 public class RomanToInt {
     public static void main(String[] args) {
-        System.out.println(romanToInt("III"));
+        System.out.println(romanToInt("IIIII"));
     }
 
     public static  int romanToInt(String s) {
