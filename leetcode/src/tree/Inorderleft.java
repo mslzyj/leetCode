@@ -1,7 +1,5 @@
 package tree;
 
-import tree.treeUtils.TreeNode;
-
 import java.util.ArrayList;
 import java.util.List;
 

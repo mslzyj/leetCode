@@ -1,4 +1,4 @@
-package tree.treeUtils;
+package tree;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,9 +8,8 @@ import java.util.List;
  */
 public class BinaryTree {
     public static void main(String[] args) {
-
-        int [] arr = {1,2,3,4,0,0,7,8,9};
-        int [] brr = {1,2,3,4,5,6};
+        int [] arr = {};
+        int [] brr = {1,2,3,4,5,6,7,8};
         List<TreeNode> list = new ArrayList<>();
         createbinarytree(list,brr);
         preOrderTraverse(list.get(0));
@@ -27,24 +26,20 @@ public class BinaryTree {
         for (int i = 0; i < lists.size(); i++) {
             System.out.println(lists.get(i));
         }
-
-
-
     }
 
     /**
      * 创建二叉树
      */
-    public static void createbinarytree(List<TreeNode> list,int [] arr){
+    public static void createbinarytree(List<TreeNode> list, int [] arr){
        //将所有的数值加入list集合
         for (int i = 0; i < arr.length; i++) {
-            list.add(new TreeNode(arr[i]));
+            list.add(new TreeNode(Integer.valueOf(arr[i])));
 
         }
         //构造二叉树
         for (int i = 0; i < (arr.length / 2) -1; i++) {
             if(arr[i] != 0) {
-
                 //左子树
                 list.get(i).setLeft(list.get((i * 2) + 1));
                 //右子树
