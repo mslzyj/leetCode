@@ -8,10 +8,8 @@ public class TreeNode {
         val = x;
     }
     public TreeNode(){}
-    public TreeNode(int val, TreeNode left, TreeNode right) {
-        this.val = val;
-        this.left = left;
-        this.right = right;
+
+    public TreeNode(int i, Object o, Object o1) {
     }
 
     public int getVal() {
@@ -36,14 +34,5 @@ public class TreeNode {
 
     public void setRight(TreeNode right) {
         this.right = right;
-    }
-
-    @Override
-    public String toString() {
-        return "TreeNode{" +
-                "val=" + val +
-                ", left=" + left +
-                ", right=" + right +
-                '}';
     }
 }
